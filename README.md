@@ -20,13 +20,6 @@ em microserviços, divididos por pessoa:
 
 Este documento cobre **apenas o auth-service**.
 
-No monolito, a autenticação já existe acoplada ao resto: `ProfessorController#login`,
-`ProfessorService#loginProfessor` e `JwtService`. Há um bug relevante: o `JwtService`
-gera o segredo HS256 aleatoriamente em memória a cada boot
-(`Keys.secretKeyFor(SignatureAlgorithm.HS256)`), o que impede validação consistente
-de tokens entre reinícios/instâncias. O auth-service corrige isso usando um segredo
-configurável.
-
 ## Objetivo e escopo
 
 **Objetivo:** um microserviço independente que autentica o professor (valida
