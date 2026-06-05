@@ -34,7 +34,7 @@ credenciais), emite tokens JWT e valida tokens via introspecção.
 - Cadastro de professor/aluno/grupo (academic-service).
 - Envio de email / RabbitMQ (notification-service).
 - Projetos (project-service).
-- Gateway e service discovery (Julio).
+- Roteamento e descoberta de serviços (API Gateway & Service Discovery).
 - Refresh token, recuperação de senha, roles além de `PROFESSOR`.
 
 ## Decisões de arquitetura
